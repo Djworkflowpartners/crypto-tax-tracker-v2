@@ -1,7 +1,10 @@
 {
-  "rootDirectory": "client",
-  "buildCommand": "pnpm run build",
-  "outputDirectory": "dist",
+  "functions": {
+    "api/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "framework": "vite"
+  "buildCommand": "cd client && pnpm run build",
+  "outputDirectory": "client/dist"
 }
