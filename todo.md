@@ -54,6 +54,7 @@
 - [x] Fix transaction ownership verification bug in updateAnnotation procedure
 - [x] Add error handling and user-friendly error messages
 - [x] Add loading skeletons and spinners
+- [x] Fix authentication redirect to Dashboard for authenticated users
 - [ ] Test transaction sync with real API credentials
 - [x] Verify CSV export includes all required fields
 
