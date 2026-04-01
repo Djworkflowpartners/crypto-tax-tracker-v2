@@ -9,6 +9,7 @@ let _db: ReturnType<typeof drizzle> | null = null;
 export async function getDb() {
   if (!_db && process.env.DATABASE_URL) {
     try {
+      // This "Pool" is what connects Vercel to your VPS IP address
       const pool = new Pool({
         connectionString: process.env.DATABASE_URL,
       });
