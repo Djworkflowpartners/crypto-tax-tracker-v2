@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/*.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "installCommand": "pnpm install --no-frozen-lockfile",
   "buildCommand": "cd client && pnpm run build",
   "outputDirectory": "client/dist"
